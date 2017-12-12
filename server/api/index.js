@@ -9,5 +9,20 @@ module.exports = {
 			longUrl: url
 		})
 		return axios.get(`${apiUrl}${query}`)
+	},
+	sendSMS(message, phoneNumber) {
+		const apiUrl = 'https://api.transmitsms.com/send-sms.json'
+		return axios({
+			method: 'post',
+			url: apiUrl,
+			data: querystring.stringify({
+				message,
+				to: phoneNumber
+			}),
+			auth: {
+				username: process.env.BURST_API_KEY,
+				password: process.env.BURST_API_SECRET
+			}
+		})
 	}
 }
