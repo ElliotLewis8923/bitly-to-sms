@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bitly to SMS</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Bitly to SMS</h1>
+    <p id="flash"></p>
+    <label for="phoneNumber">Phone number</label>
+    <input id="phoneNumber" name="phoneNumber" minlength="5" maxlength="12" />
+    <br />   
+    <label for="message">Message</label>
+    <input id="message" name="message" maxlength="612" />
+    <br />
+    <button onclick="submit()">Submit</button>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/bundle.js"></script>
+</body>
+</html>
