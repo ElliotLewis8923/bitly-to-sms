@@ -1,4 +1,4 @@
-module.exports = replaceValues = (message, urls) =>
+module.exports = replaceUrls = (message, urls) =>
   message
 		.split(' ')
 		.map(word => 
