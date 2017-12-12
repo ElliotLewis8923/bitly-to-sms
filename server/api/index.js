@@ -20,8 +20,8 @@ module.exports = {
 				to: phoneNumber
 			}),
 			auth: {
-				username: process.env.BURST_API_KEY,
-				password: process.env.BURST_API_SECRET
+				username: process.env.SMS_API_KEY,
+				password: process.env.SMS_API_SECRET
 			}
 		})
 	}
