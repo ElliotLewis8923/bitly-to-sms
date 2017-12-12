@@ -13,13 +13,14 @@
   "scripts": {
     "build": "./node_modules/.bin/babel src/index.js > ./static/js/bundle.js",
     "start": "node ./server/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha ./**/*.spec.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.34",
     "@babel/core": "^7.0.0-beta.34",
-    "@babel/preset-env": "^7.0.0-beta.34"
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "mocha": "^4.0.1"
   }
 }
